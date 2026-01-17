@@ -13,7 +13,7 @@ import pickle
 import numpy as np
 import torch
 import PIL.Image
-import dnnlib
+from edm import dnnlib
 
 #----------------------------------------------------------------------------
 

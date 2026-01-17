@@ -1,0 +1,26 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "edm-diffusion"
+version = "0.1.0"
+description = "Elucidating the Design Space of Diffusion-Based Generative Models"
+readme = "README.md"
+license = "CC-BY-NC-SA-4.0"
+requires-python = ">=3.8"
+authors = [{ name = "NVIDIA CORPORATION & AFFILIATES" }]
+dependencies = [
+    "torch>=1.12.0",
+    "numpy>=1.20",
+    "click>=8.0",
+    "pillow>=8.3.1",
+    "scipy>=1.7.1",
+    "tqdm>=4.60",
+    "requests>=2.25.0",
+    "psutil",
+    "imageio",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/edm"]

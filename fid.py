@@ -14,9 +14,9 @@ import pickle
 import numpy as np
 import scipy.linalg
 import torch
-import dnnlib
-from torch_utils import distributed as dist
-from training import dataset
+from edm import dnnlib
+from edm.torch_utils import distributed as dist
+from edm.training import dataset
 
 #----------------------------------------------------------------------------
 

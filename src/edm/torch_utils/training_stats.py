@@ -13,7 +13,7 @@ code."""
 import re
 import numpy as np
 import torch
-import dnnlib
+from .. import dnnlib
 
 from . import misc
 

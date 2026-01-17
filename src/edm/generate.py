@@ -16,8 +16,8 @@ import pickle
 import numpy as np
 import torch
 import PIL.Image
-import dnnlib
-from torch_utils import distributed as dist
+from . import dnnlib
+from .torch_utils import distributed as dist
 
 #----------------------------------------------------------------------------
 # Proposed EDM sampler (Algorithm 2).

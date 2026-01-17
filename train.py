@@ -13,9 +13,9 @@ import re
 import json
 import click
 import torch
-import dnnlib
-from torch_utils import distributed as dist
-from training import training_loop
+from edm import dnnlib
+from edm.torch_utils import distributed as dist
+from edm.training import training_loop
 
 import warnings
 warnings.filterwarnings('ignore', 'Grad strides do not match bucket view strides') # False warning printed by PyTorch 1.12.
